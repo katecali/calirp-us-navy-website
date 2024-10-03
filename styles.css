@@ -1,0 +1,73 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+/* Parallax section */
+.parallax {
+    /* Background image */
+    background-image: url('header.png'); /* Replace with your image URL */
+    height: 100vh; /* Full viewport height */
+    background-attachment: fixed; /* Creates the parallax effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.parallax-text {
+    background: rgba(0, 0, 0, 0.5); /* Optional: adds a semi-transparent background behind the text */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.parallax h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+.parallax p {
+    font-size: 1.5em;
+}
+
+/* Content Section */
+.content {
+    padding: 50px;
+    background: #f4f4f4;
+}
+
+.content h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .parallax h1 {
+        font-size: 2.5em;
+    }
+
+    .parallax p {
+        font-size: 1.2em;
+    }
+
+    .content {
+        padding: 20px;
+    }
+}
