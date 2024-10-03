@@ -27,7 +27,6 @@ body, html {
 }
 
 .parallax-text {
-    background: rgba(0, 0, 0, 0.5); /* Optional: adds a semi-transparent background behind the text */
     padding: 20px;
     border-radius: 10px;
 }
