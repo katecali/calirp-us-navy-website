@@ -34,10 +34,22 @@ body, html {
 .parallax h1 {
     font-size: 4em;
     margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 
+    2px 2px 0px black, /* Right-bottom shadow */
+    -2px 2px 0px black, /* Left-bottom shadow */
+    2px -2px 0px black, /* Right-top shadow */
+    -2px -2px 0px black; /* Left-top shadow */
 }
 
 .parallax p {
     font-size: 1.5em;
+    color: #ffffff;
+    text-shadow: 
+    2px 2px 0px black, /* Right-bottom shadow */
+    -2px 2px 0px black, /* Left-bottom shadow */
+    2px -2px 0px black, /* Right-top shadow */
+    -2px -2px 0px black; /* Left-top shadow */
 }
 
 /* Content Section */
