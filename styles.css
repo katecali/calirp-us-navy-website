@@ -121,17 +121,27 @@ body, html {
     object-fit: cover; /* Cover the entire slide */
 }
 
-/* Text overlay */
-.text {
-    color: white;
-    font-size: 2em;
+/* Text overlay for the slideshow */
+.text-overlay {
     position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    padding: 10px 20px;
-    border-radius: 5px;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Translate to middle */
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Add semi-transparent background */
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+/* Text overlay styles */
+.text-overlay h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.text-overlay p {
+    font-size: 1.5em;
 }
 
 /* Fade animation */
