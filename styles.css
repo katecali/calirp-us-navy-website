@@ -8,31 +8,32 @@
 body, html {
     font-family: Arial, sans-serif;
     height: 100%;
-    overflow-y: scroll;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Slideshow container */
 .slideshow-container {
-    position: relative;
+    position: fixed; /* Stay fixed at the top */
     width: 100%;
     height: 100vh; /* Full height of the viewport */
-    z-index: 0;
+    z-index: -1; /* Move to the background */
+    top: 0;
+    left: 0;
 }
 
 /* Individual slides */
 .mySlides {
-    display: none; /* Hide all slides initially */
     width: 100%;
     height: 100vh; /* Full height of the viewport */
+    display: none; /* Hide all slides initially */
     position: absolute;
-    top: 0;
 }
 
-/* Slide image */
+/* Slide images */
 .mySlides img {
     width: 100%;
-    height: 100vh;
-    object-fit: cover; /* Cover the entire slide */
+    height: 100vh; /* Full height */
+    object-fit: cover;
 }
 
 /* Text overlay for the slideshow */
@@ -48,15 +49,6 @@ body, html {
     border-radius: 10px;
 }
 
-/* Text overlay styles */
-.text-overlay h1 {
-    font-size: 3em;
-}
-
-.text-overlay p {
-    font-size: 1.5em;
-}
-
 /* Fade animation */
 .fade {
     animation-name: fade;
@@ -70,19 +62,22 @@ body, html {
 
 /* Navigation Bar */
 .nav {
-    position: relative;
-    top: 0;
     width: 100%;
     background-color: #333;
     overflow: hidden;
+    position: relative; /* Position it after the slideshow */
+    margin-top: 100vh; /* Push the nav bar down, just below the slideshow */
+    text-align: center; /* Center the nav links */
+}
+
+.nav nav {
+    display: inline-block; /* Display nav links inline */
 }
 
 .nav nav a {
-    float: left;
-    display: block;
+    display: inline-block;
     color: white;
-    text-align: center;
-    padding: 14px 16px;
+    padding: 14px 20px;
     text-decoration: none;
 }
 
