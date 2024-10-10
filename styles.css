@@ -104,3 +104,13 @@ body, html {
     margin: 10px 0 30px;
     font-size: 1.2em;
 }
+
+/* Hide scrollbar while allowing scrolling */
+body {
+    overflow-y: scroll; /* Allows vertical scrolling */
+    scrollbar-width: none; /* For Firefox */
+}
+
+body::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Edge */
+}
