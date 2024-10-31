@@ -114,3 +114,8 @@ body {
 body::-webkit-scrollbar {
     display: none; /* For Chrome, Safari, and Edge */
 }
+
+.footer {
+    background-color: #333;
+    text-align: center;
+}
